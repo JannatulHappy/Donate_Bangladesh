@@ -67,5 +67,14 @@ function donate(cardId) {
 
   document.getElementById("historyList").appendChild(historyItem);
 
+  // Show modal
+  const modal = document.getElementById("donationModal");
+  modal.classList.add("modal-open");
 
+  // Close modal
+  document.getElementById("modalClose").addEventListener("click", function () {
+    modal.classList.remove("modal-open");
+  });
+  // Clear the input field after donation
+  inputField.value = "";
 }
