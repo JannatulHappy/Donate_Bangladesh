@@ -1,19 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- daisy ui -->
+    <title>Donate Bangladesh</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
-      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.30.0/dist/full.css"
+      rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Donate Bangladesh</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
+          colors: {
+            primary: "#B4F461",
+            secondary: "#111111",
+           
+          },
+          fontFamily: {
+            lexend: ["Lexend", "sans-serif"],
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <h1>Donate Bangladesh</h1>
+  <body class="font-lexend">
+ <header class="relative">
+  <!-- Navbar -->
+  <div class="bg-[#F9F7F3] opacity-90 py-4 backdrop-blur-sm fixed w-full top-0 z-50">
+    <nav class="navbar top-0 text-white max-w-[85%] mx-auto flex items-center">
+      <div class="">
+        <a href="blog.html" class="bg-primary py-4 px-5 rounded-xl normal-case text-xl font-semibold">Blog</a>
+      </div>
+      <div class="flex gap-3 justify-center">
+        <img src="./assets/logo.png" alt="Logo" />
+        <h1 class=" font-semibold text-xl">Donate Bangladesh</h1>
+      </div>
+      <div class="">
+        <div class="btn btn-ghost font-medium text-xl">
+          <img src="./assets/coin.png" alt="" />
+          <span id="balance" class="px-2"> 10000</span> BDT
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <!-- Other header content (not fixed) -->
+  <div class="flex justify-center items-center max-w-[85%] mx-auto mt-16 mt-40">
+    <button id="donationBtn" class="btn bg-[#B4F461] mr-2">Donation</button>
+    <button id="historyBtn" class="btn btn-outline">History</button>
+  </div>
+</header>
+
+  
+
+
+    <script src="script.js"></script>
   </body>
 </html>
-
