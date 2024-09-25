@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - Donate Bangladesh</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.30.0/dist/full.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.30.0/dist/full.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .navbar {
-            background-color: #578023;
-        }
-        .accordion-button {
-            background-color: #578023;
-            color: #fff;
-        }
-        .accordion-button:hover {
-            background-color: #99C12A;
-        }
-        .accordion-content {
-            background-color: #ffffff;
-            border: 1px solid #578023;
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            margin-top: 0.5rem;
-        }
-        h2 {
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
+      body {
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      .navbar {
+        background-color: #578023;
+      }
+      .accordion-button {
+        background-color: #578023;
+        color: #fff;
+      }
+      .accordion-button:hover {
+        background-color: #99c12a;
+      }
+      .accordion-content {
+        background-color: #ffffff;
+        border: 1px solid #578023;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-top: 0.5rem;
+      }
+      code {
+        white-space: pre-wrap;
+        overflow-x: auto;
+        word-wrap: break-word;
+        display: block;
+        padding: 1rem;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+      }
+
+      h2 {
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar sticky top-0 text-white p-4 shadow flex justify-center items-center ">
+    <nav
+      class="navbar sticky top-0 text-white p-4 shadow flex justify-center items-center"
+    >
       <div class="">
-        <a href="index.html" class="btn bg-white text-black normal-case text-xl">Home</a>
+        <a href="index.html" class="btn bg-white text-black normal-case text-xl"
+          >Home</a
+        >
       </div>
     </nav>
 
     <!-- Blog Q&A Section -->
-    <section class="mx-auto p-6 text-[black] max-w-4xl">
-      <h2 class="text-4xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+    <section class="mx-auto mt-8 p-6 text-[black] max-w-4xl ">
+      <h2 class="text-4xl font-bold mb-6 text-center">
+        Frequently Asked Questions
+      </h2>
       <div>
         <div id="accordion-arrow-icon">
           <h2 id="accordion-arrow-icon-heading-1">
@@ -56,13 +75,25 @@
               aria-expanded="true"
               aria-controls="accordion-arrow-icon-body-1"
             >
-              <span class="text-xl font-medium" >What is Document Object Model (DOM)?</span>
+              <span class="text-xl font-medium"
+                >What is Document Object Model (DOM)?</span
+              >
             </button>
           </h2>
-          <div id="accordion-arrow-icon-body-1" class="accordion-content hidden text-xl font-medium">
-            <p>The Document Object Model (DOM) is a critical programming interface for web documents. It represents the structure of a document as a tree of objects, providing developers with the ability to dynamically manipulate the content, structure, and styles of web pages through JavaScript. This enables real-time updates and interactions within the web application.</p>
+          <div
+            id="accordion-arrow-icon-body-1"
+            class="accordion-content hidden text-xl font-medium"
+          >
+            <p>
+              The Document Object Model (DOM) is a critical programming
+              interface for web documents. It represents the structure of a
+              document as a tree of objects, providing developers with the
+              ability to dynamically manipulate the content, structure, and
+              styles of web pages through JavaScript. This enables real-time
+              updates and interactions within the web application.
+            </p>
           </div>
-          
+
           <h2 id="accordion-arrow-icon-heading-2">
             <button
               type="button"
@@ -71,11 +102,25 @@
               aria-expanded="false"
               aria-controls="accordion-arrow-icon-body-2"
             >
-              <span class="text-xl font-medium">How do you select an element from the DOM?</span>
+              <span class="text-xl font-medium"
+                >How do you select an element from the DOM?</span
+              >
             </button>
           </h2>
-          <div id="accordion-arrow-icon-body-2" class="accordion-content hidden text-xl font-medium">
-            <p>Elements within the DOM can be selected using various methods. Common approaches include <code>document.getElementById('id')</code>, <code>document.getElementsByClassName('className')</code>, <code>document.getElementsByTagName('tagName')</code>, and <code>document.querySelector('selector')</code>. Each of these methods allows for flexible access to HTML elements for further manipulation.</p>
+          <div
+            id="accordion-arrow-icon-body-2"
+            class="accordion-content hidden text-xl font-medium"
+          >
+            <p>
+              Elements within the DOM can be selected using various methods.
+              Common approaches include
+              <code>document.getElementById('id')</code>,
+              <code>document.getElementsByClassName('className')</code>,
+              <code>document.getElementsByTagName('tagName')</code>, and
+              <code>document.querySelector('selector')</code>. Each of these
+              methods allows for flexible access to HTML elements for further
+              manipulation.
+            </p>
           </div>
 
           <h2 id="accordion-arrow-icon-heading-3">
@@ -86,11 +131,25 @@
               aria-expanded="false"
               aria-controls="accordion-arrow-icon-body-3"
             >
-              <span class="text-xl font-medium">What is event delegation in DOM events, and why is it useful?</span>
+              <span class="text-xl font-medium"
+                >What is event delegation in DOM events, and why is it
+                useful?</span
+              >
             </button>
           </h2>
-          <div id="accordion-arrow-icon-body-3" class="accordion-content hidden text-xl font-medium">
-            <p>Event delegation is an efficient method that involves attaching a single event listener to a parent element instead of multiple listeners to individual child elements. This strategy not only enhances performance by reducing memory consumption but also simplifies event handling when the number of child elements changes dynamically, as the parent can manage events for all its children.</p>
+          <div
+            id="accordion-arrow-icon-body-3"
+            class="accordion-content hidden text-xl font-medium"
+          >
+            <p>
+              Event delegation is an efficient method that involves attaching a
+              single event listener to a parent element instead of multiple
+              listeners to individual child elements. This strategy not only
+              enhances performance by reducing memory consumption but also
+              simplifies event handling when the number of child elements
+              changes dynamically, as the parent can manage events for all its
+              children.
+            </p>
           </div>
 
           <h2 id="accordion-arrow-icon-heading-4">
@@ -101,11 +160,25 @@
               aria-expanded="false"
               aria-controls="accordion-arrow-icon-body-4"
             >
-              <span class="text-xl font-medium">How do you manipulate an element's attributes and styles using DOM?</span>
+              <span class="text-xl font-medium"
+                >How do you manipulate an element's attributes and styles using
+                DOM?</span
+              >
             </button>
           </h2>
-          <div id="accordion-arrow-icon-body-4" class="accordion-content hidden text-xl font-medium">
-            <p>Manipulating an element's attributes and styles in the DOM is straightforward. Use <code>setAttribute()</code> to change attributes, and for CSS styles, access the <code>style</code> property directly. For example, <code>element.style.color = 'red';</code> alters the text color to red. This capability allows for dynamic styling changes based on user interactions or other events.</p>
+          <div
+            id="accordion-arrow-icon-body-4"
+            class="accordion-content hidden text-xl font-medium"
+          >
+            <p>
+              Manipulating an element's attributes and styles in the DOM is
+              straightforward. Use <code>setAttribute()</code> to change
+              attributes, and for CSS styles, access the
+              <code>style</code> property directly. For example,
+              <code>element.style.color = 'red';</code> alters the text color to
+              red. This capability allows for dynamic styling changes based on
+              user interactions or other events.
+            </p>
           </div>
 
           <h2 id="accordion-arrow-icon-heading-5">
@@ -116,16 +189,32 @@
               aria-expanded="false"
               aria-controls="accordion-arrow-icon-body-5"
             >
-              <span class="text-xl font-medium">What are the different types of DOM manipulation?</span>
+              <span class="text-xl font-medium"
+                >What are the different types of DOM manipulation?</span
+              >
             </button>
           </h2>
-          <div id="accordion-arrow-icon-body-5" class="accordion-content hidden text-xl font-medium">
-            <p>There are several types of DOM manipulation techniques, including:</p>
+          <div
+            id="accordion-arrow-icon-body-5"
+            class="accordion-content hidden text-xl font-medium"
+          >
+            <p>
+              There are several types of DOM manipulation techniques, including:
+            </p>
             <ul class="list-disc ps-5">
-              <li>Creating new elements using <code>document.createElement()</code>.</li>
-              <li>Inserting elements into the document with methods like <code>appendChild()</code> or <code>insertBefore()</code>.</li>
+              <li>
+                Creating new elements using
+                <code>document.createElement()</code>.
+              </li>
+              <li>
+                Inserting elements into the document with methods like
+                <code>appendChild()</code> or <code>insertBefore()</code>.
+              </li>
               <li>Removing elements with <code>removeChild()</code>.</li>
-              <li>Changing the text and HTML content with <code>textContent</code> and <code>innerHTML</code>.</li>
+              <li>
+                Changing the text and HTML content with
+                <code>textContent</code> and <code>innerHTML</code>.
+              </li>
             </ul>
           </div>
 
@@ -137,32 +226,51 @@
               aria-expanded="false"
               aria-controls="accordion-arrow-icon-body-6"
             >
-              <span class="text-xl font-medium">What is the difference between the nodeType and nodeName properties?</span>
+              <span class="text-xl font-medium"
+                >What is the difference between the nodeType and nodeName
+                properties?</span
+              >
             </button>
           </h2>
-          <div id="accordion-arrow-icon-body-6" class="accordion-content hidden text-xl font-medium">
-            <p>The <code>nodeType</code> property identifies the type of node (e.g., element, text, comment) and returns a numeric value. Conversely, the <code>nodeName</code> property provides the name of the node as a string (e.g., "DIV", "#text", "#comment"), allowing developers to differentiate between various types of nodes in the DOM structure.</p>
+          <div
+            id="accordion-arrow-icon-body-6"
+            class="accordion-content hidden text-xl font-medium"
+          >
+            <p>
+              The <code>nodeType</code> property identifies the type of node
+              (e.g., element, text, comment) and returns a numeric value.
+              Conversely, the <code>nodeName</code> property provides the name
+              of the node as a string (e.g., "DIV", "#text", "#comment"),
+              allowing developers to differentiate between various types of
+              nodes in the DOM structure.
+            </p>
           </div>
-
         </div>
       </div>
     </section>
-
+    <footer class="bg-[#F9F7F3] w-full bottom-0 py-16 mt-12 px-5 font-semibold">
+      <div class="text-center">
+        <p class="text-lg">Donate Bangladesh © 2024 | All Rights Reserved</p>
+      </div>
+    </footer>
     <script>
       function toggleAccordion(targetId) {
         const content = document.getElementById(targetId);
-        const isHidden = content.classList.contains('hidden');
+        const isHidden = content.classList.contains("hidden");
 
-        // Hide all contents
-        document.querySelectorAll('[id^="accordion-arrow-icon-body-"]').forEach(item => {
-          item.classList.add('hidden');
-        });
+        // Hide all contents using a for loop
+        const allItems = document.querySelectorAll(
+          '[id^="accordion-arrow-icon-body-"]'
+        );
+        for (let i = 0; i < allItems.length; i++) {
+          allItems[i].classList.add("hidden");
+        }
 
-        // Show the selected content
+        // Show the selected content if it was hidden
         if (isHidden) {
-          content.classList.remove('hidden');
+          content.classList.remove("hidden");
         }
       }
     </script>
-</body>
+  </body>
 </html>
